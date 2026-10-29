@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio - Teguh Glenn Fredly Lumban Tobing</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        darkbg: '#0D0F12',
+                        cardbg: '#141821',
+                        cardborder: '#212836',
+                        brandorange: '#F97316',
+                        brandorangehover: '#EA580C',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0D0F12;
+            color: #E2E8F0;
+        }
+        .dark-card {
+            background-color: #141821;
+            border: 1px solid #212836;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(249, 115, 22, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-orange-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0D0F12]/80 backdrop-blur-md border-b border-gray-800/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Name Badge Logo -->
+                <a href="#home" class="flex items-center space-x-2 font-bold text-xs sm:text-sm tracking-wide bg-gray-900 border border-gray-800 px-3 py-1.5 rounded-full text-white">
+                    <span class="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse"></span>
+                    <span>TEGUH GLENN FREDLY L. TOBING</span>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
+                    <a href="#about" class="hover:text-orange-400 transition-colors">About Me</a>
+                    <a href="#skills" class="hover:text-orange-400 transition-colors">What I Can Do</a>
+                    <a href="#achievements" class="hover:text-orange-400 transition-colors">Achievement</a>
+                    <a href="#contact" class="hover:text-orange-400 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#contact" class="px-4 py-1.5 rounded-full bg-orange-500 text-white font-semibold text-sm hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2 text-gray-400 hover:text-white" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 bg-[#0D0F12] border-b border-gray-800">
+            <a href="#about" class="block px-3 py-2 rounded-lg text-sm font-medium text-gray-300 hover:bg-gray-800">About Me</a>
+            <a href="#skills" class="block px-3 py-2 rounded-lg text-sm font-medium text-gray-300 hover:bg-gray-800">What I Can Do</a>
+            <a href="#achievements" class="block px-3 py-2 rounded-lg text-sm font-medium text-gray-300 hover:bg-gray-800">Achievement</a>
+            <a href="#contact" class="block px-3 py-2 rounded-lg text-sm font-medium text-center bg-orange-500 text-white font-semibold">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-16 min-h-[85vh] flex items-center justify-center relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Profile Photo Container -->
+            <div class="relative w-44 h-44 sm:w-56 sm:h-56 mx-auto mb-8 rounded-2xl overflow-hidden border-2 border-orange-500/30 shadow-2xl bg-gray-900 group glow-effect">
+                <img src="https://placehold.co/400x400/1e293b/f97316?text=TF" alt="Teguh Glenn Fredly Lumban Tobing" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            </div>
+
+            <!-- Profile Name & Title -->
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-semibold mb-4">
+                <span>Ameliorer Aktif 2026 • Kelompok 20-Firewall</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
+                TEGUH GLENN FREDLY LUMBAN TOBING
+            </h1>
+            <p class="text-gray-400 text-sm sm:text-base font-medium max-w-xl mx-auto mb-6">
+                Mahasiswa S1 Teknik Informatika • Kelas E • NIM: 26051204039<br>
+                Universitas Negeri Surabaya
+            </p>
+
+            <!-- Coffee / Hire Badge CTA -->
+            <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-gray-900 border border-gray-800 text-xs text-gray-300 hover:border-orange-500/50 transition">
+                <i class="fa-solid fa-laptop-code text-orange-500"></i>
+                <span>Informatics Engineering Student</span>
+                <span class="bg-orange-500/20 text-orange-400 px-2 py-0.5 rounded-full text-[10px] font-bold">UNESA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: About Me -->
+    <section id="about" class="py-16 border-t border-gray-800/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="dark-card p-8 rounded-3xl relative overflow-hidden">
+                <div class="max-w-4xl">
+                    <span class="text-xs uppercase tracking-widest text-orange-500 font-semibold">01. Profil & Identitas</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 mb-6">
+                        About Me
+                    </h2>
+
+                    <!-- Identity Grid Details -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                        <div class="bg-gray-900/90 border border-gray-800 p-4 rounded-xl">
+                            <span class="text-xs text-gray-400 block mb-1">NIM</span>
+                            <span class="text-sm font-bold text-white">26051204039</span>
+                        </div>
+                        <div class="bg-gray-900/90 border border-gray-800 p-4 rounded-xl">
+                            <span class="text-xs text-gray-400 block mb-1">Kelas</span>
+                            <span class="text-sm font-bold text-white">Kelas E</span>
+                        </div>
+                        <div class="bg-gray-900/90 border border-gray-800 p-4 rounded-xl">
+                            <span class="text-xs text-gray-400 block mb-1">Program Studi</span>
+                            <span class="text-sm font-bold text-white">S1 Teknik Informatika</span>
+                        </div>
+                        <div class="bg-gray-900/90 border border-gray-800 p-4 rounded-xl border-l-2 border-l-orange-500">
+                            <span class="text-xs text-gray-400 block mb-1">Kelompok</span>
+                            <span class="text-sm font-bold text-orange-400">20-Firewall</span>
+                        </div>
+                    </div>
+
+                    <p class="text-xs sm:text-sm text-gray-300 leading-relaxed mb-6">
+                        Saya adalah Mahasiswa Baru Program Studi S1 Teknik Informatika di Universitas Negeri Surabaya (UNESA). Saat ini saya sedang menempuh pendidikan dan aktif berpartisipasi dalam rangkaian kegiatan Ameliorer 2026. Saya berfokus untuk mengembangkan kemampuan soft skill maupun hard skill di bidang teknologi informasi, khususnya pemrograman web, logika logika komputer, dan eksplorasi teknologi digital.
+                    </p>
+
+                    <!-- Activity Tags -->
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-3 py-1.5 rounded-lg bg-gray-900 border border-gray-800 text-xs text-gray-300 flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-orange-500"></i> S1 Teknik Informatika UNESA
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-gray-900 border border-gray-800 text-xs text-gray-300 flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-orange-500"></i> Kelompok 20-Firewall
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-gray-900 border border-gray-800 text-xs text-gray-300 flex items-center gap-2">
+                            <i class="fa-solid fa-code text-orange-500"></i> Web Development Student
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: What I Can Do -->
+    <section id="skills" class="py-16 border-t border-gray-800/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-xs uppercase tracking-widest text-orange-500 font-semibold">02. Keahlian & Alat</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1 mb-8">What I Can Do</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Stack Tools Card -->
+                <div class="dark-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-white mb-3">Tools & Tech Stack</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                            Teknologi dan perangkat lunak yang saya pelajari dan gunakan untuk mendukung pembelajaran dan pembuatan proyek teknologi informasi.
+                        </p>
+                    </div>
+                    <!-- Icon Grid -->
+                    <div class="grid grid-cols-4 gap-3">
+                        <div class="p-2.5 rounded-lg bg-gray-900 border border-gray-800 text-center text-orange-500 text-lg" title="HTML5"><i class="fa-brands fa-html5"></i></div>
+                        <div class="p-2.5 rounded-lg bg-gray-900 border border-gray-800 text-center text-blue-400 text-lg" title="CSS3"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="p-2.5 rounded-lg bg-gray-900 border border-gray-800 text-center text-yellow-400 text-lg" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+                        <div class="p-2.5 rounded-lg bg-gray-900 border border-gray-800 text-center text-sky-400 text-lg" title="Python"><i class="fa-brands fa-python"></i></div>
+                        <div class="p-2.5 rounded-lg bg-gray-900 border border-gray-800 text-center text-red-500 text-lg" title="Git"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="p-2.5 rounded-lg bg-gray-900 border border-gray-800 text-center text-white text-lg" title="GitHub"><i class="fa-brands fa-github"></i></div>
+                        <div class="p-2.5 rounded-lg bg-gray-900 border border-gray-800 text-center text-blue-500 text-lg" title="Database"><i class="fa-solid fa-database"></i></div>
+                        <div class="p-2.5 rounded-lg bg-gray-900 border border-gray-800 text-center text-purple-400 text-lg" title="Figma"><i class="fa-brands fa-figma"></i></div>
+                    </div>
+                </div>
+
+                <!-- Capability Item 01 -->
+                <div class="dark-card p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl font-extrabold text-gray-700">01</span>
+                        <div class="w-8 h-8 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-2">Web Development Basic</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                        Memahami struktur dasar pembuatan situs web responsif menggunakan HTML, CSS (Tailwind CSS), dan JavaScript.
+                    </p>
+                    <ul class="space-y-1.5 text-[11px] text-gray-400 border-t border-gray-800/80 pt-3">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-orange-500 text-[9px] mr-2"></i> Responsive Layout Design</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-orange-500 text-[9px] mr-2"></i> Semantic HTML & Modern CSS</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-orange-500 text-[9px] mr-2"></i> Web Portfolio Creation</li>
+                    </ul>
+                </div>
+
+                <!-- Capability Item 02 -->
+                <div class="dark-card p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-2xl font-extrabold text-gray-700">02</span>
+                        <div class="w-8 h-8 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center text-sm">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-2">Version Control & Problem Solving</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                        Memanfaatkan Git dan GitHub untuk manajemen repositori kode serta penerapan dasar logika alur algoritma.
+                    </p>
+                    <ul class="space-y-1.5 text-[11px] text-gray-400 border-t border-gray-800/80 pt-3">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-orange-500 text-[9px] mr-2"></i> Git Repository Management</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-orange-500 text-[9px] mr-2"></i> Algorithm Basics & Flowchart</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-orange-500 text-[9px] mr-2"></i> Computational Thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Achievement -->
+    <section id="achievements" class="py-16 border-t border-gray-800/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-xs uppercase tracking-widest text-orange-500 font-semibold">03. Rekam Jejak & Pencapaian</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1 mb-8">Achievement</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Achievement Card 1 -->
+                <div class="dark-card p-6 rounded-2xl relative group hover:border-orange-500/40 transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 font-bold">2026</span>
+                            <h3 class="text-base font-bold text-white mt-2">Peserta Aktif Ameliorer 2026</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-orange-500">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-3">
+                        Penyelenggara: Himpunan Mahasiswa Jurusan Teknik Informatika UNESA.<br>
+                        Mengikuti seluruh rangkaian kegiatan pengenalan dan pelatihan kompetensi dasar mahasiswa Teknik Informatika UNESA.
+                    </p>
+                    <div class="text-[11px] text-gray-500">
+                        <i class="fa-solid fa-circle-info mr-1 text-orange-500"></i> Kelompok 20-Firewall
+                    </div>
+                </div>
+
+                <!-- Achievement Card 2 -->
+                <div class="dark-card p-6 rounded-2xl relative group hover:border-orange-500/40 transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 font-bold">2026</span>
+                            <h3 class="text-base font-bold text-white mt-2">Penerimaan SNBP / SNBT S1 Teknik Informatika</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-orange-500">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-3">
+                        Penyelenggara: SNPMB / Universitas Negeri Surabaya.<br>
+                        Berhasil diterima sebagai mahasiswa aktif Program Studi S1 Teknik Informatika UNESA dengan NIM 26051204039.
+                    </p>
+                    <div class="text-[11px] text-gray-500">
+                        <i class="fa-solid fa-circle-check mr-1 text-emerald-500"></i> Mahasiswa Aktif
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Contact -->
+    <section id="contact" class="py-20 border-t border-gray-800/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left Title Content -->
+                <div class="md:col-span-6">
+                    <span class="text-xs uppercase tracking-widest text-orange-500 font-semibold">04. Informasi Kontak</span>
+                    <h2 class="text-4xl sm:text-5xl font-black text-white tracking-tight mt-2 mb-4">
+                        LET'S WORK<br>TOGETHER
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-400 max-w-md leading-relaxed mb-6">
+                        Silakan hubungi saya melalui saluran komunikasi di bawah ini untuk diskusi, kolaborasi akademik, atau informasi lebih lanjut.
+                    </p>
+                    
+                    <button onclick="toggleContactModal()" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-full bg-orange-500 text-white font-semibold text-xs hover:bg-orange-600 transition shadow-lg shadow-orange-500/20">
+                        <span>Kirim Pesan Langsung</span>
+                        <i class="fa-solid fa-paper-plane text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Right Contact Links Card List -->
+                <div class="md:col-span-6 space-y-3">
+                    
+                    <!-- Direct Email Card -->
+                    <a href="mailto:glnnfredly1@gmail.com" class="dark-card p-4 rounded-xl flex items-center justify-between hover:border-orange-500/50 transition group">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-9 h-9 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-center text-orange-500">
+                                <i class="fa-regular fa-envelope text-sm"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-gray-500 block">Email Utama</span>
+                                <span class="text-xs text-gray-200 font-medium">glnnfredly1@gmail.com</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-xs text-gray-600 group-hover:text-orange-400 transition"></i>
+                    </a>
+
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/glnnfredly1-jpg" target="_blank" rel="noopener noreferrer" class="dark-card p-4 rounded-xl flex items-center justify-between hover:border-orange-500/50 transition group">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-9 h-9 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-center text-white">
+                                <i class="fa-brands fa-github text-sm"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-gray-500 block">GitHub Profil</span>
+                                <span class="text-xs text-gray-200 font-medium">github.com/glnnfredly1-jpg</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-600 group-hover:text-orange-400 transition"></i>
+                    </a>
+
+                    <!-- LinkedIn Link -->
+                    <a href="https://www.linkedin.com/in/glnntob-1-53ab50426?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" class="dark-card p-4 rounded-xl flex items-center justify-between hover:border-orange-500/50 transition group">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-9 h-9 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-center text-blue-400">
+                                <i class="fa-brands fa-linkedin-in text-sm"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-gray-500 block">LinkedIn Profil</span>
+                                <span class="text-xs text-gray-200 font-medium">Teguh Glenn Fredly Lumban Tobing</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-600 group-hover:text-orange-400 transition"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Form Modal -->
+    <div id="contactModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="dark-card max-w-md w-full p-6 rounded-2xl relative shadow-2xl">
+            <button onclick="toggleContactModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <h3 class="text-lg font-bold text-white mb-1">Kirim Pesan</h3>
+            <p class="text-xs text-gray-400 mb-4">Hubungi Teguh Glenn via form langsung.</p>
+            
+            <form id="contactForm" onsubmit="event.preventDefault(); submitForm();" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-gray-400 mb-1">Nama Lengkap</label>
+                    <input type="text" required placeholder="Masukkan nama Anda" class="w-full px-3 py-2 rounded-lg bg-gray-900 border border-gray-800 text-xs text-white focus:outline-none focus:border-orange-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-400 mb-1">Email</label>
+                    <input type="email" required placeholder="email@contoh.com" class="w-full px-3 py-2 rounded-lg bg-gray-900 border border-gray-800 text-xs text-white focus:outline-none focus:border-orange-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-400 mb-1">Pesan</label>
+                    <textarea rows="3" required placeholder="Tuliskan pesan Anda..." class="w-full px-3 py-2 rounded-lg bg-gray-900 border border-gray-800 text-xs text-white focus:outline-none focus:border-orange-500"></textarea>
+                </div>
+                <button type="submit" class="w-full py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-semibold text-xs transition">
+                    Kirim Pesan
+                </button>
+            </form>
+
+            <div id="toast" class="hidden mt-3 p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs text-center">
+                Pesan berhasil dikirim!
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800/40 text-center text-xs text-gray-500">
+        <p>© 2026 Teguh Glenn Fredly Lumban Tobing • Ameliorer Aktif - Kelompok 20-Firewall</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact Modal Toggle
+        function toggleContactModal() {
+            const modal = document.getElementById('contactModal');
+            modal.classList.toggle('hidden');
+        }
+
+        // Form Submit Handler
+        function submitForm() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('hidden');
+            document.getElementById('contactForm').reset();
+            setTimeout(() => {
+                toast.classList.add('hidden');
+                toggleContactModal();
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
